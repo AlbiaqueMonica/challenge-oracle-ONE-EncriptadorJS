@@ -15,14 +15,15 @@ La letra "u" es convertida para "ufat"
 Requisitos:
 - Debe funcionar solo con letras minúsculas
 - No deben ser utilizados letras con acentos ni caracteres especiales
-- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+- Debe ser posible convertir una palabra para la versión encriptada, también devolver una palabra encriptada para su versión original.
 
 Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
 
-La página debe tener campos para
-inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+"gato" => "gaitober"
+
+"gaitober" => "gato"
+
+La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 El resultado debe ser mostrado en la pantalla.
 Extras:
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
@@ -31,7 +32,7 @@ Extras:
 ✨ Diseño propuesto: https://docs.google.com/document/d/1Bzt9CkO2iDnt3Zkj3usB9_xAOyEVVwzg/edit?usp=share_link&ouid=105707968199090586057&rtpof=true&sd=true
 
 
-⏩⏩ CÓMO UTILIZAR ESTE REPO:
+<b>⏩⏩ CÓMO UTILIZAR ESTE REPO:</b>
 
 Clona el Proyecto:
 
