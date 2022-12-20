@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador JS
+    <title>Decodificador de textos con Javascript
     </title>
-    <link rel="stylessheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Encriptador Java Script</h1>
-    
+    <header>
+
+        <img class="logo" src="img/cifrado.jpg" alt="candado">
+        <h1>Encriptador JS</h1>
+    </header>
+
+    <div class="contenedor">
+        <!--Funcionalidad Principal-->
+        <section>
+            <img src="img/logoAlura.png" alt="logo Alura">
+            <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto" autofocus></textarea>
+            <div class="informacion">
+                <img src="img/Vector.svg" alt="signo de exclamacion" class="informacion__imagen">
+                <p class="informacion__parrafo">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="cont__btn">
+                <button class="btn btn_encriptar" id="encriptar">Encriptar</button>
+                <button class="btn btn_desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <!--Resultados-->
+        <aside>
+            <textarea style="display:none;" class="contenedor__resultado__texto" name="texto" id="resultado" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto"></textarea>
+            <!-- <div id="ocultar"> -->
+            <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa" class="ocultar__muneco">
+            <h2 class="ocultar__titulo">Ningún mensaje fue encontrado</h2>
+            <p class="ocultar__parrafo">Ingresa el texto que desees encriptar o desencriptar..</p>
+            <!-- </div> -->
+            <div class="cont__btn__copiar">
+                <button class="btn btn_copiar" id="copiar" hidden>Copiar</button>
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        Copyright @ 2022 Encriptador JS - Challenge Oracle One <span>by monic.albiaque@gmail.com </span>
+
+        <ul class="redes">
+            <li><a href="https://www.linkedin.com/in/monica-liliana-albiaque/" target="_blank" class="linkedin"><i
+                        class="fa fa-linkedin fa-fw"></i></a></li>
+            <li><a href="https://github.com/AlbiaqueMonica" target="_blank" class="github"><i><i
+                            class="fa fa-github fa-fw"></i></a></li>
+        </ul>
+
+    </footer>
+
+    <!-- Iconos de redes -->
+    <script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
+
+    <!-- Funcionalidad del encriptador -->
+    <script src="app.js"></script>
 </body>
+
 </html>
