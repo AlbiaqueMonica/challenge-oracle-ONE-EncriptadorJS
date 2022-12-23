@@ -1,26 +1,34 @@
 
-* {
+/* * {
 
     box-sizing: border-box;
-  }
+  } */
    
   body {
     padding: 0;
     margin: 0; 
-
-    min-height: 100vh;
+   
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background: #849fb4;
-    display: flex;
-    flex-direction: column;
+    background: #F3F5FC;
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: column; */
   } 
 
-header{
+header{         
   padding: 5px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.alura{
+    background: #c3e8ea;
+    width: 10%;
+    position: absolute;
+    left: 5%;
+    
 }
 
 h1{
@@ -38,35 +46,102 @@ h1{
     height: 100px;
 } 
 
-.contenedor{
+.container{
+    background: #7daec2;
+    /* width: 1440px; */
+    /* height: auto; */
+    /* top:622px;
+    left:-2277px; */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: 100%;
+}
     
-    width: 100%;
-    height: 230vh;
-    min-height: 725px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
+main{
+    
+    margin: 0;
+    
+    
+    
+    
+}
+section{
+    width: 60%;
+    background-color: transparent;
+    float: left;
+    
+    /* display: inline-block; */
+    
+    /* flex-direction: column; */
+   /*  justify-content: center;
+    text-align: center; */
+    height: auto;
+    /* display: inline-block;  */
+   /*  align-content: center;
+    flex-wrap: wrap;
+    
+    right: 0;
+    padding: 5px; */
 }
 
-.section{
-    width: 65%;
-    background-color: transparent;
-    position: absolute;
-    left: 0;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 90%;
-    display: inline-flex;
-    align-content: center;
-    flex-wrap: wrap;
+textarea{
     top: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+
+
+aside{
+    /* width: 45%; */
+    /* height: 555px; */
+    background: #edf0f1;
+    float: right;
+    display: inline-flex;
+   /*  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    width: 40%;
+    /* height: 944px; */
+    /* height: 735px; */
+    /* background: white; */
+    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
+    border-radius: 32px;
+    
+   /*  align-content: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+    
+    /* top: 70px;
     right: 0;
     padding: 5px;
+    z-index: 1; */
 }
 
-.contenedor1_textoIngreso {
+.resultado{
+    top: 5%;
+    height: 30%;
+    width: 30%;
+    /* display: inline; */
+}
+
+.doll{
+     width: auto; 
+     height: auto; 
+     border-radius: 32px;
+    /* margin-bottom: 10px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+/* .contenedor1_textoIngreso {
     width: 90%;
     height: 500px;
     background-color: transparent;
@@ -76,13 +151,13 @@ h1{
     align-items: center;
     text-align: center;
     border: none;
-}
+} */
 
-textarea {
+/* textarea {
     color: #0a3871;
     resize: none;
     font-size: 20px;
-    font-weight: 800;
+    /* font-weight: 800; 
     border: none;
 
     font-family: "Inter";
@@ -94,13 +169,13 @@ textarea {
 
     max-width: 100%;
     max-height: 85%;
-}
+} */
 
-::placeholder {
+/* ::placeholder {
     color: rgba(10, 56, 113, 0.3);
-}
+} */
 
-.informacion {
+/* .informacion {
     width: 100%;
     height: 100px;
     background-color: transparent;
@@ -109,8 +184,8 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
+} */
+/* 
 .informacion__imagen {
     width: 20px;
     height: 20px;
@@ -126,15 +201,18 @@ textarea {
     display: flex;
     justify-content: space-around;
 }
-
+*/
 .btn {
-    max-width: 300px;
-    width: 60%;
-    /* border-radius: 24px; */
-    margin-right: 10px;
+    /*max-width: 300px;
+    width: 60%; */
+    border-radius: 15px; 
+    width: 328px;
+  /*   margin-right: 10px;*/
     height: 60px;
+    border: 0px;
 }
 
+/*
 .btn_encriptar {
     padding: 15px 25px;
     border: unset;
@@ -183,8 +261,8 @@ textarea {
     z-index: 1;
     background: #d8dfe8;
     position: relative;
-    font-weight: 1000;
-    font-size: 17px;
+    font-weight: 1000; */
+/*     font-size: 17px;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
@@ -205,42 +283,19 @@ textarea {
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
 }
-
-.btn_desencriptar:hover {
+ */
+/* .btn_desencriptar:hover {
     color: #e8e8e8;
     cursor: pointer;
 }
 
 .btn_desencriptar:hover::before {
     width: 100%;
-}
+} */
 
-.aside{
-    width: 95%;
-    height: 555px;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 35%;
-    height: 735px;
-    background: white;
-    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
-    border-radius: 32px;
-    display: inline-flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    padding: 5px;
-    z-index: 1;
-}
 
-.contenedor__resultado__texto {
+
+/* .contenedor__resultado__texto {
     width: 95%;
     height: 555px;
     background-color: transparent;
@@ -254,16 +309,16 @@ textarea {
 .ocultar__muneco {
     width: 95%;
     /* height: 100%; */
-    margin-bottom: 10px;
+  /*   margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-}
+} */ 
 
-.ocultar__titulo {
+/* .ocultar__titulo {
     font-size: 25px;
     font-weight: 800;
     color: #0a3871;
@@ -287,8 +342,8 @@ textarea {
     justify-content: center;
     text-align: center;
 }
-
-.cont__btn__copiar {
+ */
+/* .cont__btn__copiar {
     height: 67px;
     width: 100%;
     display: flex;
@@ -336,17 +391,8 @@ textarea {
 .btn_copiar:hover::before {
     width: 100%;
 }
+ */
 
-.doll{
-    /* width: 95%; */
-    /* height: 100%; */
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 footer{
     color:  #15205a;
@@ -357,6 +403,8 @@ footer{
     font-size:large;
     position: absolute;
     bottom: 0;
+    /* margin: 5px; */
+    font-size: 13px;
 }
 
 span{
@@ -371,4 +419,7 @@ span{
     justify-content: center;
     text-align: center;
     top: 20px;
+    margin: 10px;
+    font-size: 15px;
 }
+

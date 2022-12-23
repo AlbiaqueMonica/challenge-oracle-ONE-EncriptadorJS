@@ -7,49 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de textos con Javascript
     </title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
 </head>
 
 <body>
+    <div class="container">
     <header>
-
+        <div class="alura">
+            logo alura
+        </div>
         <img class="logo" src="img/cifrado.jpg" alt="candado">
         <h1>Encriptador JS</h1>
     </header>
 
-    <div class="contenedor">
+    <main>
         <!--Funcionalidad Principal-->
-        <section>
-            <img src="img/logoAlura.png" alt="logo Alura">
-            <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
-                rows="10" placeholder="Escribe aquí tu texto" autofocus></textarea>
-            <div class="informacion">
+
+      <!--   https://github.com/gregomatias/Oracle-One-Challenge-Encriptador
+
+https://github.com/onfevs/Encriptador -->
+        <section >
+            <textarea>fañsfagadñ</textarea>
+            <!-- <img src="img/logoAlura.png" alt="logo Alura"> -->
+            <!-- <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto" autofocus></textarea> -->
+           <!--  <div class="informacion">
                 <img src="img/Vector.svg" alt="signo de exclamacion" class="informacion__imagen">
                 <p class="informacion__parrafo">Solo letras minúsculas y sin acentos</p>
-            </div>
-            <div class="cont__btn">
+            </div> -->
+           <div class="cont__btn">
                 <button class="btn btn_encriptar" id="encriptar">Encriptar</button>
                 <button class="btn btn_desencriptar" id="desencriptar">Desencriptar</button>
-            </div>
+            </div> 
         </section>
 
         <!--Resultados-->
         <aside>
-            <textarea style="display:none;" class="contenedor__resultado__texto" name="texto" id="resultado" cols="30"
-                rows="10" placeholder="Escribe aquí tu texto"></textarea>
-            <!-- <div id="ocultar"> -->
-            <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa" class="ocultar__muneco">
-            <h2 class="ocultar__titulo">Ningún mensaje fue encontrado</h2>
-            <p class="ocultar__parrafo">Ingresa el texto que desees encriptar o desencriptar..</p>
-            <!-- </div> -->
-            <div class="cont__btn__copiar">
-                <button class="btn btn_copiar" id="copiar" hidden>Copiar</button>
+            <textarea  class="resultado" name="texto" id="resultado" cols="30"
+                rows="10" ></textarea>
+             <div id="ocultar"> <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa" class="ocultar__muneco">
+          <!--   <h2 class="ocultar__titulo">Ningún mensaje fue encontrado</h2>
+            <p class="ocultar__parrafo">Ingresa el texto que desees encriptar o desencriptar..</p> -->
+            </div> 
+           <div class="cont__btn__copiar">
+                <button class="btn_copiar" id="copiar" hidden>Copiar</button>
             </div>
 
         </aside>
-    </div>
+    </main>
     <footer>
-        Copyright @ 2022 Encriptador JS - Challenge Oracle One <span>by monic.albiaque@gmail.com </span>
+        <p class="parrafo" > &copy Copyright 2022 Encriptador JS - Challenge Oracle One <span>by monic.albiaque@gmail.com </span> </p>
 
         <ul class="redes">
             <li><a href="https://www.linkedin.com/in/monica-liliana-albiaque/" target="_blank" class="linkedin"><i
@@ -59,6 +68,7 @@
         </ul>
 
     </footer>
+</div>
 
     <!-- Iconos de redes -->
     <script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
