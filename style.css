@@ -42,7 +42,7 @@ h1 {
   color: #edf0f1;
   font-size: 30px;
   position: absolute;
-  right: 25%;
+  right: 30%;
   font-weight: 1000;
 }
 
@@ -50,7 +50,7 @@ h1 {
   position: relative;
   display: inline-block;
   border-radius: 50%;
-  width: 200px;
+  width: 250px;
   height: 100px;
 }
 
@@ -70,7 +70,7 @@ h1 {
 main {
   margin: 0;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   height: 80%;
 }
 section {
@@ -108,7 +108,7 @@ section {
   outline: none;
   background: #7daec2;
   left: 240px;
-  top: 20%;
+  top: 30%;
   position: relative;
 }
 
@@ -191,8 +191,8 @@ aside {
   left: 1032px;
   /* top: 72px; */
   top: 5%;
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 80%;
   display: flex;
   color: #495057;
   font-family: "Inter";

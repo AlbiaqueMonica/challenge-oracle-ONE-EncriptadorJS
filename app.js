@@ -13,58 +13,71 @@ Requisitos:
 */
 
 function encriptar() {
+  const frase = document.getElementById("textoEncriptar").value;
+ 
+  if (frase.trim() != "") {
+    let textoEncriptado = frase.replace(/e/gm, "enter");
+    textoEncriptado = textoEncriptado.replace(/o/gm, "ober");
+    textoEncriptado = textoEncriptado.replace(/i/gm, "imes");
+    textoEncriptado = textoEncriptado.replace(/a/gm, "ai");
+    textoEncriptado = textoEncriptado.replace(/u/gm, "ufat");
 
-    const frase = document.getElementById("textoEncriptar").value.toLowerCase();
-    console.log(frase);
+    document.getElementById("ocultarDoll").style.display = "none";
+    document.getElementById("aviso1").style.display = "none";
+    document.getElementById("aviso2").style.display = "none";
 
-    let textoEncriptado = frase.replace(/e/mg, 'enter');
-    console.log(textoEncriptado);
-     textoEncriptado = textoEncriptado.replace(/o/mg, 'ober');
-     console.log(textoEncriptado);
-     textoEncriptado = textoEncriptado.replace(/i/mg, 'imes');
-     textoEncriptado = textoEncriptado.replace(/a/mg, 'ai');
-     textoEncriptado = textoEncriptado.replace(/u/mg, 'ufat');
+    document.getElementById("textoMostrar").value = textoEncriptado;
 
-     document.getElementById("ocultarDoll").style.display="none";
-     document.getElementById("aviso1").style.display="none";
-     document.getElementById("aviso2").style.display="none";
+    document.getElementById("textoMostrar").style.display = "block";
 
-     document.getElementById("textoMostrar").value = textoEncriptado;
-
-     document.getElementById("textoMostrar").style.display = 'block';
-
-     document.getElementById("copiar").style.display = 'block';
-
-
-
-     
-
+    document.getElementById("copiar").style.display = "block";
+  } else {
+    alert("Ingresa el texto que desees encriptar o desencriptar");
+  }
 }
 
 function desencriptar() {
+  const frase = document.getElementById("textoEncriptar").value;
 
-    const frase = document.getElementById("textoEncriptar").value.toLowerCase();
-    console.log(frase);
+  let textoEncriptado = frase.replace(/enter/gm, "e");
+  textoEncriptado = textoEncriptado.replace(/ober/gm, "o");
+  textoEncriptado = textoEncriptado.replace(/imes/gm, "i");
+  textoEncriptado = textoEncriptado.replace(/ai/gm, "a");
+  textoEncriptado = textoEncriptado.replace(/ufat/gm, "u");
 
-    let textoEncriptado = frase.replace(/enter/mg, 'e');
-    console.log(textoEncriptado);
-     textoEncriptado = textoEncriptado.replace(/ober/mg, 'o');
-     console.log(textoEncriptado);
-     textoEncriptado = textoEncriptado.replace(/imes/mg, 'i');
-     textoEncriptado = textoEncriptado.replace(/ai/mg, 'a');
-     textoEncriptado = textoEncriptado.replace(/ufat/mg, 'u');
+  document.getElementById("ocultarDoll").style.display = "none";
 
-     document.getElementById("ocultarDoll").style.display="none";
-
-     document.getElementById("textoMostrar").value = textoEncriptado;
-
-     
-
+  document.getElementById("textoMostrar").value = textoEncriptado;
 }
 
-function copiarTexto(){
+function copiarTexto() {
+  const textoContenido = document.querySelector("#textoMostrar");
+  textoContenido.select();
+  document.execCommand("copy");
+  limpiaTexto();
+}
 
-    const textoContenido = document.querySelector("#textoMostrar")
-    textoContenido.select();
-    document.execCommand("copy");
+function limpiaTexto() {
+  document.getElementById("textoEncriptar").value = "";
+}
+
+function validarCaracteres(e) {
+  const key = e.key,
+    letras = "abcdefghijklmnñopqrstuvwxyz",
+    //Por una cuestión de legibilidad para el usuario vamos a permitir teclas tales como Enter, espacios, puntos y comas...
+    especiales = ["Enter", " ", ".", ",", ";", "Pegar", "Ctrol+V"];
+
+  let tecla_especial = false;
+
+  for (let i in especiales) {
+    if (key == especiales[i]) {
+      tecla_especial = true;
+      break;
+    }
+  }
+
+  if (letras.indexOf(key) == -1 && !tecla_especial) {
+    alert("No ingresar mayúsculas, acentos ni caracteres especiales!!");
+    return false;
+  }
 }

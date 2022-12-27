@@ -31,7 +31,7 @@
 https://github.com/onfevs/Encriptador -->
             <section>
                 <div class="texto">
-                    <textarea class="ingreso-texto" id="textoEncriptar">Ingrese el texto aquí</textarea>
+                    <textarea class="ingreso-texto" id="textoEncriptar" onclick="limpiaTexto()"  onkeypress="return validarCaracteres(event)">Ingrese el texto aquí</textarea>
                     <!-- <img src="img/logoAlura.png" alt="logo Alura"> -->
                     <!-- <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
                 rows="10" placeholder="Escribe aquí tu texto" autofocus></textarea> -->
@@ -57,7 +57,8 @@ https://github.com/onfevs/Encriptador -->
 
 
                 <div id="ocultar">  
-                    <textarea class="resultado"  id="textoMostrar"></textarea>
+                    <textarea class="resultado"  id="textoMostrar" cols="30"
+                    rows="10"></textarea>
                     <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa"
                         id="ocultarDoll">
                     <!--   <h2 class="ocultar__titulo">Ningún mensaje fue encontrado</h2>
@@ -68,7 +69,7 @@ https://github.com/onfevs/Encriptador -->
                 <h3 class="aviso"  id="aviso2">Ingresa el texto que desees encriptar o desencriptar.</h3>
 
                 <div class="cont__btn__copiar">
-                    <button class="btn_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+                    <button type="button" class="btn_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
 
             </aside>
