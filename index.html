@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de textos con Javascript
     </title>
+    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#" />
@@ -39,10 +40,13 @@ https://github.com/onfevs/Encriptador -->
                 <p class="informacion__parrafo">Solo letras minúsculas y sin acentos</p>
             </div> -->
                 </div>
+                <div class="text_cont_btn">
+                    <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon><p >Sólo minúsculas y sin acentos</p>
+            </div>
                 <div class="cont__btn">
-                    <p class="text_cont_btn">Sólo minúsculas y sin acentos</p>
+                    
                     <button type="button" class="btn btn_encriptar" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
-                    <button type="button" class="btn btn_desencriptar" id="desencriptar">Desencriptar</button>
+                    <button type="button" class="btn btn_desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </section>
 
@@ -53,17 +57,18 @@ https://github.com/onfevs/Encriptador -->
 
 
                 <div id="ocultar">  
-                    <textarea  id="textoMostrar">gfdgsh</textarea>
+                    <textarea class="resultado"  id="textoMostrar"></textarea>
                     <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa"
                         id="ocultarDoll">
                     <!--   <h2 class="ocultar__titulo">Ningún mensaje fue encontrado</h2>
             <p class="ocultar__parrafo">Ingresa el texto que desees encriptar o desencriptar..</p> -->
                 </div>
-                <h2>Ningún mensaje fue encontrado</h2>
+                <h2 class="aviso" id="aviso1">Ningún mensaje fue encontrado</h2>
 
-                <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+                <h3 class="aviso"  id="aviso2">Ingresa el texto que desees encriptar o desencriptar.</h3>
+
                 <div class="cont__btn__copiar">
-                    <button class="btn_copiar" id="copiar" hidden>Copiar</button>
+                    <button class="btn_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
 
             </aside>
@@ -87,6 +92,7 @@ https://github.com/onfevs/Encriptador -->
 
     <!-- Funcionalidad del encriptador -->
     <script src="app.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 
 </html>
