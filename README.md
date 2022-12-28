@@ -39,6 +39,12 @@ Clona el Proyecto:
 git clone https://github.com/AlbiaqueMonica/challenge-oracle-ONE-EncriptadorJS.git
 
 
+✨ Diseño Desktop final: 
+
+![DiseñoDesktop](https://user-images.githubusercontent.com/72052340/209849022-f9f86618-ce96-4992-9600-6ef76f7c6a9e.png)
+
+
+
 
 
 
