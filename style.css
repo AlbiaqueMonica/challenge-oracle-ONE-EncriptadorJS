@@ -76,20 +76,22 @@ section {
 }
 
 .ingreso-texto {
-  height: 90%;
-  width: 70%;
+  height: 70%;
+  width: 8git0%;
   color: #0a3871;
   font-family: "Inter";
   font-weight: 400;
   font-size: 25px;
   line-height: 48px;
-  border: none;
+  /* border: none; */
   outline: none;
   background: #7daec2;
-  
+  border: 2px solid #D8DFE8;
+  border-radius: 3%;
   margin-top: 20px;
-  padding: 50px;
-  left: 350px;
+  margin-bottom: 20px;
+  padding: 20px;
+  left: 370px;
   position: relative;
   resize: none;
   
@@ -119,7 +121,7 @@ p.text_cont_btn {
 
 .cont__btn {
   height: 20%;
-  width: 70%;
+  width: 50%;
   bottom: 5px;
   position: absolute;
   display: flex;
@@ -163,7 +165,7 @@ aside {
   outline: none;
   background: #edf0f1;
   float:inline-start;
-
+  
   color: #495057;
   font-family: "Inter";
   font-style: normal;
