@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  
+
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -16,7 +16,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* padding: 40px; */
   gap: 40px;
   position: absolute;
   width: 120px;
@@ -33,14 +32,7 @@ h1 {
   padding: 20px;
 }
 
-/* .logo {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  width: 250px;
-  height: 100px;
-  padding-top: 15px;
-} */
+
 
 .container {
   background: #7daec2;
@@ -55,8 +47,7 @@ h1 {
 main {
   margin: 0;
   padding: 10px;
-  /* width: 60%;
-  height: 80%; */
+  
 }
 
 section {
@@ -77,7 +68,7 @@ section {
 
 .ingreso-texto {
   height: 70%;
-  width: 8git0%;
+  width: 80%;
   color: #0a3871;
   font-family: "Inter";
   font-weight: 400;
@@ -94,12 +85,13 @@ section {
   left: 370px;
   position: relative;
   resize: none;
-  
+
 }
 
-iconify-icon {
+.exclama {
   bottom: 5px;
-  color: #495057;
+  width: 13px;
+  color: #092949;
 }
 
 
@@ -115,8 +107,8 @@ p.text_cont_btn {
   padding-bottom: 20px;
   color: #495057;
   opacity: 0.8;
-  
-  
+
+
 }
 
 .cont__btn {
@@ -126,27 +118,21 @@ p.text_cont_btn {
   position: absolute;
   display: flex;
   flex-direction: row;
-  align-items:stretch;
+  align-items: stretch;
   left: 390px;
   gap: 70px;
   color: #495057;
 
 }
 
-/* .text_cont_btn {
-  display: block;
-  left: 150px;
-
-} */
 
 aside {
-
   background: #edf0f1;
   float: right;
   display: inline-flex;
   flex-direction: column;
-  justify-content:flex-start; 
-  align-items:center;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   justify-content: space-evenly;
   height: 705px;
@@ -154,18 +140,15 @@ aside {
   border-radius: 32px;
   position: absolute;
   width: 400px;
-  /* height: 680px;
-  top: 140px;*/
-  left: 1200px; 
-
+  left: 1200px;
 }
 
 .resultado {
   border: none;
   outline: none;
   background: #edf0f1;
-  float:inline-start;
-  
+  float: inline-start;
+
   color: #495057;
   font-family: "Inter";
   font-style: normal;
@@ -175,7 +158,7 @@ aside {
   display: none;
   resize: none;
   height: 80%;
-  
+
 }
 
 .aviso {
@@ -252,12 +235,12 @@ aside {
 .texto_oculto {
   color: black;
 }
- 
+
 .btn_desencriptar:hover {
   color: #e8e8e8;
   cursor: pointer;
   color: #11b5e7;
-  
+
   -webkit-box-shadow: 4px 8px 19px -3px rgba(18, 57, 77, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(18, 57, 77, 0.27);
   transition: all 250ms;
@@ -283,11 +266,11 @@ aside {
   -webkit-box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
   box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
   transition: all 250ms;
- 
+
   bottom: 32px;
-  
+
   border: 1px solid #0A3871;
-  
+
 }
 
 
@@ -303,7 +286,7 @@ aside {
 
 footer {
   color: #15205a;
-  
+
   width: 100%;
   padding: 0.3em 0;
   text-align: center;
@@ -315,7 +298,7 @@ footer {
 
 span {
   font-style: italic;
-  
+
 }
 
 .redes {

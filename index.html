@@ -8,6 +8,8 @@
     <title>Decodificador de textos con Javascript
     </title>
     <script type="text/javascript" src="app.js"></script>
+    <!-- Iconos Redes -->
+    <script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#" />
@@ -19,45 +21,46 @@
             <div class="alura">
                 <img class="logoAlura" src="img/LogoAlura.png" alt="logo de Alura">
             </div>
-            <!-- <img class="logo" src="img/cifrado.jpg" alt="candado"> -->
+
             <h1>Encriptador de Mensajes</h1>
         </header>
 
         <main>
-            
+
             <section>
                 <div class="texto">
-                    <textarea cols="20"
-                    rows="10" class="ingreso-texto" id="textoEncriptar" placeholder="Escribe aquí tu texto" autofocus
-                      onkeypress="return validarCaracteres(event)"></textarea>
-                   
+                    <textarea cols="20" rows="10" class="ingreso-texto" id="textoEncriptar"
+                        placeholder="Escribe aquí tu texto" autofocus
+                        onkeypress="return validarCaracteres(event)"></textarea>
+
                 </div>
-                <div >
-                    <p class="text_cont_btn"><iconify-icon  icon="bi:exclamation-circle-fill"></iconify-icon>
-                    Sólo minúsculas y sin acentos</p>
+                <div>
+                    <p class="text_cont_btn"><img class="exclama" src="img/bi_exclamation-circle-fill.png"
+                            alt="signo de exclamación">
+                        Sólo minúsculas y sin acentos</p>
                 </div>
                 <div class="cont__btn">
-                    
-                    <button type="button" class="btn btn_encriptar" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
-                    <button type="button" class="btn btn_desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+                    <button type="button" class="btn btn_encriptar" id="btn_encriptar"
+                        onclick="encriptar()">Encriptar</button>
+                    <button type="button" class="btn btn_desencriptar" id="desencriptar"
+                        onclick="desencriptar()">Desencriptar</button>
                 </div>
             </section>
 
             <!--Resultados-->
             <aside>
-                
-                <div id="ocultar">  
-                    <textarea class="resultado"  id="textoMostrar" cols="30"
-                    rows="10"></textarea>
-                    <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa"
-                        id="ocultarDoll">
-                    
+
+                <div id="ocultar">
+                    <textarea class="resultado" id="textoMostrar" cols="30" rows="10"></textarea>
+                    <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa" id="ocultarDoll">
+
                 </div>
                 <div>
-                <h2 class="aviso" id="aviso1">Ningún mensaje fue encontrado</h2>
+                    <h2 class="aviso" id="aviso1">Ningún mensaje fue encontrado</h2>
 
-                <h3 class="aviso"  id="aviso2">Ingresa el texto que desees encriptar o desencriptar.</h3>
-            </div>
+                    <h3 class="aviso" id="aviso2">Ingresa el texto que desees encriptar o desencriptar.</h3>
+                </div>
                 <div class="cont__btn__copiar">
                     <button type="button" class="btn btn_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
@@ -77,11 +80,6 @@
 
         </footer>
     </div>
-
-    <!-- Iconos -->
-    <script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
-    
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 </body>
 
