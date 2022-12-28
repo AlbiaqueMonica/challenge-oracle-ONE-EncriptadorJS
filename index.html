@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de textos con Javascript
     </title>
-    
+    <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#" />
@@ -24,25 +24,18 @@
         </header>
 
         <main>
-            <!--Funcionalidad Principal-->
-
-            <!--   https://github.com/gregomatias/Oracle-One-Challenge-Encriptador
-
-https://github.com/onfevs/Encriptador -->
+            
             <section>
                 <div class="texto">
-                    <textarea class="ingreso-texto" id="textoEncriptar" onclick="limpiaTexto()"  onkeypress="return validarCaracteres(event)">Ingrese el texto aquí</textarea>
-                    <!-- <img src="img/logoAlura.png" alt="logo Alura"> -->
-                    <!-- <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
-                rows="10" placeholder="Escribe aquí tu texto" autofocus></textarea> -->
-                    <!--  <div class="informacion">
-                <img src="img/Vector.svg" alt="signo de exclamacion" class="informacion__imagen">
-                <p class="informacion__parrafo">Solo letras minúsculas y sin acentos</p>
-            </div> -->
+                    <textarea cols="20"
+                    rows="10" class="ingreso-texto" id="textoEncriptar" placeholder="Escribe aquí tu texto" autofocus
+                      onkeypress="return validarCaracteres(event)"></textarea>
+                   
                 </div>
-                <div class="text_cont_btn">
-                    <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon><p >Sólo minúsculas y sin acentos</p>
-            </div>
+                <div >
+                    <p class="text_cont_btn"><iconify-icon  icon="bi:exclamation-circle-fill"></iconify-icon>
+                    Sólo minúsculas y sin acentos</p>
+                </div>
                 <div class="cont__btn">
                     
                     <button type="button" class="btn btn_encriptar" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
@@ -52,24 +45,21 @@ https://github.com/onfevs/Encriptador -->
 
             <!--Resultados-->
             <aside>
-                <!-- <textarea  class="resultado" name="texto" id="resultado" cols="30"
-                rows="10" ></textarea> -->
-
-
+                
                 <div id="ocultar">  
                     <textarea class="resultado"  id="textoMostrar" cols="30"
                     rows="10"></textarea>
                     <img class="doll" src="img/doll.jpg" alt="Imagen buscando con lupa"
                         id="ocultarDoll">
-                    <!--   <h2 class="ocultar__titulo">Ningún mensaje fue encontrado</h2>
-            <p class="ocultar__parrafo">Ingresa el texto que desees encriptar o desencriptar..</p> -->
+                    
                 </div>
+                <div>
                 <h2 class="aviso" id="aviso1">Ningún mensaje fue encontrado</h2>
 
                 <h3 class="aviso"  id="aviso2">Ingresa el texto que desees encriptar o desencriptar.</h3>
-
+            </div>
                 <div class="cont__btn__copiar">
-                    <button type="button" class="btn_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+                    <button type="button" class="btn btn_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
 
             </aside>
@@ -88,12 +78,11 @@ https://github.com/onfevs/Encriptador -->
         </footer>
     </div>
 
-    <!-- Iconos de redes -->
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
-
-    <!-- Funcionalidad del encriptador -->
-    <script src="app.js"></script>
+    
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
 </body>
 
 </html>

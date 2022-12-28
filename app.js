@@ -31,14 +31,17 @@ function encriptar() {
     document.getElementById("textoMostrar").style.display = "block";
 
     document.getElementById("copiar").style.display = "block";
-  } else {
-    alert("Ingresa el texto que desees encriptar o desencriptar");
+  } else{
+    document.getElementById("ocultarDoll").style.display = "none";
+    document.getElementById("aviso1").style.display = "block";
+    document.getElementById("aviso2").style.display = "block";
   }
 }
 
 function desencriptar() {
   const frase = document.getElementById("textoEncriptar").value;
-
+  
+  if (frase.trim() != "") {
   let textoEncriptado = frase.replace(/enter/gm, "e");
   textoEncriptado = textoEncriptado.replace(/ober/gm, "o");
   textoEncriptado = textoEncriptado.replace(/imes/gm, "i");
@@ -46,8 +49,15 @@ function desencriptar() {
   textoEncriptado = textoEncriptado.replace(/ufat/gm, "u");
 
   document.getElementById("ocultarDoll").style.display = "none";
-
+  document.getElementById("aviso1").style.display = "none";
+  document.getElementById("aviso2").style.display = "none";
   document.getElementById("textoMostrar").value = textoEncriptado;
+  }else{
+    document.getElementById("ocultarDoll").style.display = "none";
+    document.getElementById("aviso1").style.display = "block";
+    document.getElementById("aviso2").style.display = "block";
+    
+  }
 }
 
 function copiarTexto() {
@@ -60,7 +70,7 @@ function copiarTexto() {
 function limpiaTexto() {
   document.getElementById("textoEncriptar").value = "";
 }
-
+ 
 function validarCaracteres(e) {
   const key = e.key,
     letras = "abcdefghijklmnñopqrstuvwxyz",
