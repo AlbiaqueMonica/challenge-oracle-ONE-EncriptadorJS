@@ -64,6 +64,7 @@ git clone https://github.com/AlbiaqueMonica/challenge-oracle-ONE-EncriptadorJS.g
 
 O bajalo como zip:
 
+https://github.com/AlbiaqueMonica/challenge-oracle-ONE-EncriptadorJS/archive/refs/heads/master.zip
 
 
 ✨ Diseño Desktop final: 
