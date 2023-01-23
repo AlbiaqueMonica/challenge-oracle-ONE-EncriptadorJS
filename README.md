@@ -62,7 +62,7 @@ Clona el Proyecto:
 
 git clone https://github.com/AlbiaqueMonica/challenge-oracle-ONE-EncriptadorJS.git
 
-O bajalo como zip:
+O bajalo como zip y luego descomprímelo en tu equipo:
 
 https://github.com/AlbiaqueMonica/challenge-oracle-ONE-EncriptadorJS/archive/refs/heads/master.zip
 
